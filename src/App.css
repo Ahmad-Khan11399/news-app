@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap");
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.msg {
+  color: #394867;
+  padding: 10px;
+  margin-top: 5%;
+}
+.big-heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  position: absolute;
+  left: 48%;
+  top: 10%;
+  color: #394867;
+}
+.container {
+  background: linear-gradient(to bottom, #9babcd, #99aebb);
+  min-height: 300vh;
+  min-width: 100vw;
+}
+label {
+  color: #394867;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+  border-style: ridge;
+  border-radius: 8px;
+  border-color: #e0e0e0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  width: 75%;
+  min-height: 60vh;
+  position: absolute;
+  left: 14%;
+  top: 20%;
+}
+.cool-button {
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  border-radius: 8px;
+  border: 0;
+  color: white;
+  font-weight: 600;
+  height: 48px;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  min-width: 8%;
+  left: 45%;
+  bottom: 5%;
+}
+
+.cool-button:hover {
+  background: linear-gradient(45deg, #ff8e53 30%, #fe6b8b 90%);
+}
+
+@media (max-width: 768px) {
+  .big-heading {
+    position: absolute;
+    left: 30%;
+  }
+  .main-div {
+    min-height: 100vh;
+  }
+  .cool-button {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    min-height: 1000vh;
+  }
+}

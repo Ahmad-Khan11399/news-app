@@ -1,0 +1,85 @@
+.login-container {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+}
+.login-form input {
+  width: 60%;
+  margin: 5% 20%;
+
+  padding: 10px;
+}
+.login-form {
+  background: linear-gradient(to bottom, #ec9380, #ffe5da);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 70vw;
+  text-align: center;
+  min-height: 70vh;
+}
+.category-select {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50vw;
+}
+.form-title {
+  margin-bottom: 20px;
+  color: #333333;
+  font-family: "Nunito Sans", sans-serif;
+}
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+.custom-button {
+  background: linear-gradient(180deg, #2196f3, #1976d2);
+  box-shadow: 3px 3px 0 rgba(255, 255, 255, 0.1);
+  height: 6.5vh;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 10 vh;
+}
+.custom-button:hover {
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+.custom-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .custom-button {
+    margin-left: 0;
+    min-height: 9vh;
+  }
+
+  .intro-btn {
+    position: absolute;
+    left: 0;
+    min-height: 20vh;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .custom-button {
+    margin-left: 4%;
+    min-height: 13vh;
+  }
+  .small {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
